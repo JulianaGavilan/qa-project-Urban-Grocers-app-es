@@ -3,23 +3,18 @@ import configuration
 import requests
 import data
 
-def get_docs():
-    return requests.get(configuration.URL_SERVICE + configuration.DOC_PATH)
-
-response = get_docs()
-print(response.status_code)
-def post_new_user(body):
+def post_new_user(user_body):
     return requests.post(configuration.URL_SERVICE + configuration.CREATE_USER_PATH,  # inserta la dirección URL completa
-                         json=body,  # inserta el cuerpo de solicitud
+                         json=user_body,  # inserta el cuerpo de solicitud
                          headers=data.headers)  # inserta los encabezados
 
-response = post_new_user(data.user_body)
-authToken=response.json()
-print(response.status_code)
-print(response.json())
-
-def post_new_kit():
+def post_new_client_kit(kit_body):
+    create_user = post_new_user(data.user_body)
+    token = create_user.json()['authToken']
+    headers = {
+        "Content-Type":"application/json",
+        "Authorization":f"Bearer {token}"
+    }
     return requests.post(configuration.URL_SERVICE + configuration.CREATE_NEW_KIT,
-                         headers=data.headers + data.Authorization + {authToken})
-response = post_new_kit()
-print(response.status_code)
+                         json=kit_body,
+                         headers=data.headers)  # Pasa los encabezados con el token

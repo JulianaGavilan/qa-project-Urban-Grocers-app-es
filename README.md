@@ -4,7 +4,13 @@ Presentado por Juliana Gavilan, Sprint 7
 
 En este proyecto se trabaja la comprobando de la aplicación Urban Grocers la cual crea kits de productos.En las presentes circunstancias se han creado varias listas de comprobación, una de ellas es para el campo name en la solicitud de creación de un kit de productos.
 
-Este proyecto consiste en automatizar las pruebas de la siguiente lista de comprobación, cargando el código en GitHub y enviando el repositorio a revisión.
+Este proyecto consiste en automatizar las pruebas de la siguiente lista de comprobación, cargando el código en GitHub y enviando el repositorio a revisión. Para esta automatizacion se utilizaron diferentes tipos de pruebas entre las cuales se encuentran:
+
+### 🆗 Pruebas Positivas
+En ellas se verifica que el código funciona de forma correcta con la entradas de datos validas, segun lo esperado por diseño y por el cliente.
+
+### ❌ Puebas negativas
+En estas pruebas se verifica que el código funciona de forma correcta al recibir entradas de datos invalidas, con lo cual se esperan respuestas de error por parte del código. Con el fin de verificar el correcto manejo por parte del sistema de errores y/o situaciones inesperadas.
 
 ## ✔️**Lista de comprobación de pruebas**
 
@@ -18,8 +24,7 @@ Este proyecto consiste en automatizar las pruebas de la siguiente lista de compr
 | 6 |  	Se permiten espacios: kit_body = { "name": " A Aaa " } |  Código de respuesta: 201 El campo "name" del cuerpo de la respuesta coincide con el campo "name" del cuerpo de la solicitud |
 | 7 | 	Se permiten números: kit_body = { "name": "123" }  | Código de respuesta: 201 El campo "name" del cuerpo de la respuesta coincide con el campo "name" del cuerpo de la solicitud  |
 | 8 | 	El parámetro no se pasa en la solicitud: kit_body = { }  |  solicitud: kit_body = { }	Código de respuesta: 400  |
-| 9 |   	Se ha pasado un ti
-po de parámetro diferente (número): kit_body = { "name": 123 }|   solicitud: kit_body = { }	Código de respuesta: 400 |
+| 9 |   	Se ha pasado un tipo de parámetro diferente (número): kit_body = { "name": 123 }|   solicitud: kit_body = { }	Código de respuesta: 400 |
 
 ## 📖: Bibliotecas
 

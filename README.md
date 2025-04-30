@@ -1,13 +1,12 @@
-# Proyecto Urban Grocers
+# 🛒 Proyecto Urban Grocers
 
 Presentado por Juliana Gavilan, Sprint 7 
 
-Otro QA Engineer que trabaja contigo está comprobando cómo la aplicación Urban Grocers crea kits de productos. Se han creado varias listas de comprobación,
-una de ellas es para el campo name en la solicitud de creación de un kit de productos.
+En este proyecto se trabaja la comprobando de la aplicación Urban Grocers la cual crea kits de productos.En las presentes circunstancias se han creado varias listas de comprobación, una de ellas es para el campo name en la solicitud de creación de un kit de productos.
 
 Este proyecto consiste en automatizar las pruebas de la siguiente lista de comprobación, cargando el código en GitHub y enviando el repositorio a revisión.
 
-## **Lista de comprobación de pruebas**
+## ✔️**Lista de comprobación de pruebas**
 
 | № |  Description |   ER:|
 |---|---|---|
@@ -22,7 +21,7 @@ Este proyecto consiste en automatizar las pruebas de la siguiente lista de compr
 | 9 |   	Se ha pasado un ti
 po de parámetro diferente (número): kit_body = { "name": 123 }|   solicitud: kit_body = { }	Código de respuesta: 400 |
 
-## Bibliotecas
+## 📖: Bibliotecas
 
 Antes de iniciar con el proyecto no podemos olvidar instalar las diferentes bibliotecas que nos ayudaran a ejecutar las pruebas estas bibliotecas son
 
@@ -56,7 +55,7 @@ En tu proyecto de PyCharm, dirígete al panel inferior y selecciona la pestaña 
 En el campo de búsqueda, introduce "Pytest".
 Localiza y selecciona el paquete "Pytest" de la lista y haz clic en el botón "Install".
 
-### Para ejecutar las pruebas en la terminal
+### 🧰 Para ejecutar las pruebas en la terminal
 Tienes dos opciones para ejecutar tus pruebas: directamente desde la consola de PyCharm o utilizando su interfaz gráfica.
 
 1️⃣ Desde la terminal de PyCharm
